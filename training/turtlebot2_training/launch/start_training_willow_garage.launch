@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+    <!-- This version uses the openai_ros environments -->
+    <rosparam command="load" file="$(find turtlebot2_training)/config/turtlebot2_willow_garage_params.yaml" />
+    <!-- Launch the training system -->
+    <node pkg="turtlebot2_training" name="turtlebot2_willow_garage" type="start_training.py" output="screen"/>
+</launch>
